@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Milestone Project</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>Html Milestone Project</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#video-section">Services</a></li>
+                <li><a href="#image-section">Gallery</a></li>
+                <li><a href="#contact-form">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <hr>
+
+    <!-- MAIN -->
+    <main class="main">
+
+        <!-- SECTION 1 -->
+        <section id="home" class="intro">
+            <h2>Welcome to Our Website</h2>
+            <p>
+                We provide high-quality digital solutions tailored to meet your needs. 
+                Our goal is to deliver excellence through innovation and creativity.
+            </p>
+            <p>
+                Whether you're looking for web design, branding, or digital strategy, 
+                we are here to help you grow your online presence.
+            </p>
+
+            <a href="#contact-form">Contact Us</a>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 2 (VIDEO) -->
+        <section id="video-section" class="video">
+           <video controls poster="https://images.unsplash.com/photo-1761839258753-85d8eecbbc29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" width="300" height="300">
+              <source type="video/mp4"
+              src=" https://github.com/mdn/learning-area/raw/refs/heads/main/html/multimedia-and-embedding/tasks/media-embed/media/video.mp4" type="video/mp4">
+              Your browser does not support the video element.
+           </video>
+        </section>
+
+        <!-- SECTION 3 (IMAGE) -->
+        <section id="image-section" class="image">
+            <img src="https://images.unsplash.com/photo-1761839258753-85d8eecbbc29?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="fastfood" 
+             width="300" height="300">
+        </section>
+
+        <hr>
+        
+        <!-- SECTION 4 (TABLE) -->
+        <section class="table-section">
+            <h2>Service Pricing Overview</h2>
+
+            <table border="1">
+                <caption>Pricing for Our Digital Services</caption>
+
+                <thead>
+                    <tr>
+                        <th scope="col">Service</th>
+                        <th scope="col">Description</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <th scope="row">Web Design</th>
+                        <td>Modern and responsive website design</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">SEO Optimization</th>
+                        <td>Improve your website ranking on search engines</td>
+                        <td>$300</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Content Creation</th>
+                        <td>High-quality blog and marketing content</td>
+                        <td>$200</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <hr>
+
+        <!-- SECTION 5 (FORM) -->
+        <section id="contact-form" class="contact">
+            <h2>Contact Us</h2>
+
+            <form>
+
+                <fieldset>
+                    <legend>Personal Information</legend>
+
+                    <label for="name">Full Name:</label><br>
+                    <input 
+                        type="text" 
+                        id="name" 
+                        name="name" 
+                        required 
+                        minlength="10" 
+                        maxlength="20"><br><br>
+
+                    <label for="phone">Phone Number:</label><br>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        required 
+                        maxlength="11"><br><br>
+
+                    <label for="email">Email Address:</label><br>
+                    <input 
+                        type="email" 
+                        id="email" 
+                        name="email" 
+                        required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Location</legend>
+
+                    <label for="city">Select Your Area:</label><br>
+                    <select id="city" name="city" required>
+                        <option value="">--Choose Location--</option>
+                        <option>GRA</option>
+                        <option>Rumuokoro</option>
+                        <option>Rumuola</option>
+                        <option>Eliozu</option>
+                        <option>Trans Amadi</option>
+                        <option>Ada George</option>
+                        <option>Oyigbo</option>
+                        <option>Elelenwo</option>
+                        <option>Rukpokwu</option>
+                        <option>Choba</option>
+                    </select>
+                </fieldset>
+
+                <br>
+
+                <fieldset>
+                    <legend>Message</legend>
+
+                    <label for="message">Your Message:</label><br>
+                    <textarea 
+                        id="message" 
+                        name="message" 
+                        required 
+                        maxlength="100"></textarea>
+                </fieldset>
+
+                <br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 My Web Project</p>
+
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+            <li><a href="#">Support</a></li>
+        </ul>
+    </footer>
+
+</body>
+</html>
