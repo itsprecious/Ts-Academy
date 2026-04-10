@@ -1,3 +1,4 @@
+
 /* Reset CSS by Amaka Ndukwu */
 
 /* making use of :where to allow for low specificity making it easy to override */
@@ -135,4 +136,52 @@ padding is optional but i do this because of lists*/
     textarea,
     [tabindex]:not([tabindex*="-"])) {
     touch-action: manipulation
+}
+
+
+
+/* My own css */
+
+.html, body{
+    height: 100vh;
+}
+
+body {
+    background-color: #00c1b5;
+    font-family: "Crimson Text", serif;
+    padding: 20px;
+}
+
+h1 {
+    font-family: "Bitter", serif;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+.text-bold {
+    font-weight: 700;
+    text-align: center;
+}
+
+.text-bold a {
+    color: #fff;
+    text-decoration: none;
+}
+.text-bold * + * {
+    margin-bottom: 10px;
+}
+
+img{
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    object-fit: contain;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.float-right {
+    float: right;
 }

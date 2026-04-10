@@ -1,5 +1,5 @@
 /* =========================
-   RESET & BASE
+  css 
 ========================= */
 * {
   margin: 0;
@@ -139,6 +139,34 @@ body {
 .card:hover {
   transform: translateY(-15px) scale(1.05);
   background: rgba(255,255,255,0.1);
+}
+
+/* =========================
+   CARD BACKGROUND IMAGES
+========================= */
+
+/* Mercury */
+.card:nth-child(1) {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+              url('/css/images/Mercury.jpg') center/cover no-repeat;
+}
+
+/* Venus */
+.card:nth-child(2) {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+              url('/css/images/Venus.jpg') center/cover no-repeat;
+}
+
+/* Earth */
+.card:nth-child(3) {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+              url('/css/images/Earth.jpg') center/cover no-repeat;
+}
+
+/* Mars */
+.card:nth-child(4) {
+  background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),
+              url('/css/images/Mars.jpg') center/cover no-repeat;
 }
 
 /* =========================
